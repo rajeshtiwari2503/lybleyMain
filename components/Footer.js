@@ -1,9 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
   FaLocationArrow,
   FaMobileAlt,FaEnvelope
 } from "react-icons/fa";

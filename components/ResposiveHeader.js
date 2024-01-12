@@ -1,5 +1,4 @@
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
 import Link from "next/link";
 import { NavbarLinks } from "./Header";
 import { useRouter } from "next/router";

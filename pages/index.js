@@ -25,6 +25,7 @@ export default function Home() {
       <HomeSlider />
       <div className='container mx-auto px-14 mt-20'>
        <HomePage />
+       
       </div>
     </main>
     </>
