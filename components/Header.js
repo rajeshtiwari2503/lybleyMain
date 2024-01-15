@@ -1,5 +1,5 @@
  
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import { FaCaretDown } from "react-icons/fa";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
@@ -61,9 +61,26 @@ const Header = ({ handleOrderPopup }) => {
   const hrefggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const [scrolling, setScrolling] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 670) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full z-50  text-white">
+      <nav className={`${router.pathname==="/about" || router.pathname==="/contact" ? "bg-black" : ""} fixed top-0 right-0 w-full z-50 ${scrolling ? "bg-black transition-colors duration-500 ease-in-out" : ""}  text-white`}>
         {/* <div className="bg-gradient-to-r from-primary to-secondary text-white ">
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center justify-between">
@@ -98,12 +115,12 @@ const Header = ({ handleOrderPopup }) => {
                         <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                       </span>
                     </Link>
-                    <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block shadow-md ">
+                    <div className="absolute -left-9 z-[9999] hidden w-[200px] rounded-md bg-white p-2 text-black group-hover:block shadow-md ">
                       <ul className="space-y-3">
                         {DropdownLinks.map((data) => (
                           <li key={data.name}>
                             <Link
-                              className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                              className="inline-block w-full rounded-md p-2 hover:bg-black hover:text-white"
                               href={data.link}
                             >
                               {data.name}
