@@ -35,23 +35,23 @@ export const NavbarLinks = [
 const DropdownLinks = [
   {
     name: "Lybley IT",
-    link: "Lybley IT",
+    link: "https://it.lybley.com",
   },
   {
     name: "SpareTrade",
-    link: "mobile_brands",
+    link: "https://www.sparetrade.in",
   },
   {
     name: "Heuser",
-    link: "location",
+    link: "https://heuser.in",
   },
   {
     name: "Home Applicances",
-    link: "location",
+    link: "https://www.lybley.com",
   },
   {
     name: "Samosa Fry",
-    link: "location",
+    link: "https://www.samosafry.com",
   },
 ];
 
@@ -78,6 +78,10 @@ const Header = ({ handleOrderPopup }) => {
     };
   }, []);
 
+  const handleLink=(link )=>{
+    window.open(link,"_blank");
+}
+
   return (
     <>
       <nav className={`${router.pathname==="/about" || router.pathname==="/contact" ? "bg-black" : ""} fixed top-0 right-0 w-full z-50 ${scrolling ? "bg-black transition-colors duration-500 ease-in-out" : ""}  text-white`}>
@@ -92,9 +96,9 @@ const Header = ({ handleOrderPopup }) => {
         <div className="  ">
           <div className="container mx-auto px-14 py-3 sm:py-0">
             <div className="flex justify-between items-center">
-              <div className="flex  items-center gap-4 py-1 font-bold text-2xl">
+              <div className="flex items-center gap-4 py-1 font-bold text-2xl">
                 <Link href={"/"}  >
-                  <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
+                  <img src={"/Logo.png"} alt="" className={`${scrolling ? "border-2 border-white" : ""} h-16 max-w-full rounded-lg`} />
                 </Link>
                 {/* <span>TCJ hrefurism</span> */}
               </div>
@@ -119,12 +123,12 @@ const Header = ({ handleOrderPopup }) => {
                       <ul className="space-y-3">
                         {DropdownLinks.map((data) => (
                           <li key={data.name}>
-                            <Link
+                            <div
                               className="inline-block w-full rounded-md p-2 hover:bg-black hover:text-white"
-                              href={data.link}
+                              onClick={()=>handleLink(data.link)}
                             >
                               {data.name}
-                            </Link>
+                            </div>
                           </li>
                         ))}
                       </ul>
