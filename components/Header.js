@@ -34,16 +34,24 @@ export const NavbarLinks = [
 
 const DropdownLinks = [
   {
-    name: "Our Services",
-    link: "/#services",
+    name: "Lybley IT",
+    link: "Lybley IT",
   },
   {
-    name: "hrefp Brands",
-    link: "/#mobile_brands",
+    name: "SpareTrade",
+    link: "mobile_brands",
   },
   {
-    name: "Location",
-    link: "/#location",
+    name: "Heuser",
+    link: "location",
+  },
+  {
+    name: "Home Applicances",
+    link: "location",
+  },
+  {
+    name: "Samosa Fry",
+    link: "location",
   },
 ];
 
@@ -75,32 +83,57 @@ const Header = ({ handleOrderPopup }) => {
               </div>
               <div className="hidden md:block">
                 <ul className="flex items-center gap-6 animatedRight ">
-                  <li className="py-4">
+                  {/* <li className="py-4">
                     <Link href="services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary" : "" }`} >
                       Services
                     </Link>
+                  </li> */}
+                   <li className="group relative cursor-pointer">
+                    <Link
+                      href="/"
+                      className="flex h-[72px] items-center gap-[2px]"
+                    >
+                      Brands{" "}
+                      <span>
+                        <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+                      </span>
+                    </Link>
+                    <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block shadow-md ">
+                      <ul className="space-y-3">
+                        {DropdownLinks.map((data) => (
+                          <li key={data.name}>
+                            <Link
+                              className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                              href={data.link}
+                            >
+                              {data.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </li>
                   {/* <li className="py-4">
                     <Link href="/insights" className={`text-decoration-none ${router.pathname==="/insights" ? "text-primary" : "" }`} >
                       Insights
                     </Link>
                   </li> */}
-                  <li className="py-4">
+                  {/* <li className="py-4">
                     <Link href="blogs" className={`text-decoration-none ${router.pathname==="/blogs" ? "text-primary" : "" }`} >
                       Blogs
                     </Link>
-                  </li>
+                  </li> */}
                   
                   <li className="py-4">
                     <Link href="about" className={`text-decoration-none ${router.pathname==="/about" ? "text-primary" : "" }`} >
                       About
                     </Link>
                   </li>
-                  <li className="py-4">
+                  {/* <li className="py-4">
                     <Link href="careers" className={`text-decoration-none ${router.pathname==="/careers" ? "text-primary" : "" }`} >
                       Careers
                     </Link>
-                  </li>
+                  </li> */}
                   {/* <li className="group relative cursor-pointer">
                     <Link
                       href="/"
