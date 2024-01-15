@@ -1,5 +1,5 @@
- 
-import React, { useState,useEffect } from "react";
+
+import React, { useState, useEffect } from "react";
 
 import { FaCaretDown } from "react-icons/fa";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
@@ -12,7 +12,7 @@ export const NavbarLinks = [
     name: "Sevices",
     link: "services",
   },
-  
+
   {
     name: "About",
     link: "about",
@@ -29,7 +29,7 @@ export const NavbarLinks = [
     name: "Contact us",
     link: "contact",
   },
-   
+
 ];
 
 const DropdownLinks = [
@@ -57,7 +57,7 @@ const DropdownLinks = [
 
 const Header = ({ handleOrderPopup }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const router=useRouter();
+  const router = useRouter();
   const hrefggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -80,7 +80,7 @@ const Header = ({ handleOrderPopup }) => {
 
   return (
     <>
-      <nav className={`${router.pathname==="/about" || router.pathname==="/contact" ? "bg-black" : ""} fixed top-0 right-0 w-full z-50 ${scrolling ? "bg-black transition-colors duration-500 ease-in-out" : ""}  text-white`}>
+      <nav className={`${router.pathname === "/about" || router.pathname === "/contact" || router.pathname === "/career" ? "bg-black" : ""} fixed top-0 right-0 w-full z-50 ${scrolling ? "bg-black transition-colors duration-500 ease-in-out" : ""}  text-white`}>
         {/* <div className="bg-gradient-to-r from-primary to-secondary text-white ">
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center justify-between">
@@ -90,7 +90,7 @@ const Header = ({ handleOrderPopup }) => {
           </div>
         </div> */}
         <div className="  ">
-          <div className="container mx-auto px-14 py-3 sm:py-0">
+          <div className="container mx-auto md:px-14 px-4 md:py-3 py-0 sm:py-0">
             <div className="flex justify-between items-center">
               <div className="flex  items-center gap-4 py-1 font-bold text-2xl">
                 <Link href={"/"}  >
@@ -98,14 +98,14 @@ const Header = ({ handleOrderPopup }) => {
                 </Link>
                 {/* <span>TCJ hrefurism</span> */}
               </div>
-              <div className="hidden md:block">
+              <div className=" ">
                 <ul className="flex items-center gap-6 animatedRight ">
                   {/* <li className="py-4">
-                    <Link href="services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary" : "" }`} >
+                    <Link href="services" className={`text-decoration-none ${router.pathname==="/services" ? "text-blue-400" : "" }`} >
                       Services
                     </Link>
                   </li> */}
-                   <li className="group relative cursor-pointer">
+                  <li className="group relative cursor-pointer">
                     <Link
                       href="/"
                       className="flex h-[72px] items-center gap-[2px]"
@@ -130,27 +130,19 @@ const Header = ({ handleOrderPopup }) => {
                       </ul>
                     </div>
                   </li>
-                  {/* <li className="py-4">
-                    <Link href="/insights" className={`text-decoration-none ${router.pathname==="/insights" ? "text-primary" : "" }`} >
-                      Insights
-                    </Link>
-                  </li> */}
-                  {/* <li className="py-4">
-                    <Link href="blogs" className={`text-decoration-none ${router.pathname==="/blogs" ? "text-primary" : "" }`} >
-                      Blogs
-                    </Link>
-                  </li> */}
-                  
+                 
+
                   <li className="py-4">
-                    <Link href="about" className={`text-decoration-none ${router.pathname==="/about" ? "text-primary" : "" }`} >
+                    <Link href="about" className={`text-decoration-none ${router.pathname === "/about" ? "text-blue-400" : ""}`} >
                       About
                     </Link>
                   </li>
-                  {/* <li className="py-4">
-                    <Link href="careers" className={`text-decoration-none ${router.pathname==="/careers" ? "text-primary" : "" }`} >
-                      Careers
+                  <li className="py-4">
+                    <Link href="contact" className={`text-decoration-none ${router.pathname === "/contact" ? "text-blue-400" : ""}`} >
+                    Contact us
                     </Link>
-                  </li> */}
+                  </li>
+                  
                   {/* <li className="group relative cursor-pointer">
                     <Link
                       href="/"
@@ -178,17 +170,9 @@ const Header = ({ handleOrderPopup }) => {
                   </li> */}
                 </ul>
               </div>
-              <div className="flex items-center gap-4">
-                <Link href={"contact"}>
-                <button
-                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
-                  
-                >
-                 Contact us
-                </button>
-                </Link>
-                {/* Mobile Hamburger icon */}
-                <div className="md:hidden block">
+               
+
+                {/* <div className="md:hidden block">
                   {showMenu ? (
                     <HiMenuAlt1
                       onClick={hrefggleMenu}
@@ -202,12 +186,12 @@ const Header = ({ handleOrderPopup }) => {
                       size={30}
                     />
                   )}
-                </div>
-              </div>
+                </div> */}
+              
             </div>
           </div>
         </div>
-        <ResponsiveHeader setShowMenu={setShowMenu} showMenu={showMenu} />
+        {/* <ResponsiveHeader setShowMenu={setShowMenu} showMenu={showMenu} /> */}
       </nav>
     </>
   );

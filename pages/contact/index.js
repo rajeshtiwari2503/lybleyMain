@@ -105,7 +105,7 @@ const contact = () => {
                 <div className='mt-2 font-bold text-2xl'>Email :</div>
                 <div>help@lybley.com</div>
                 <div className='mt-2 font-bold text-2xl'>Contact No. :</div>
-                <div>7011071202</div>
+                <div>+91 7011071202</div>
                 <div className='mt-2 font-bold text-2xl'>Social Media</div>
                 <div>Connect with us on social media for updates, news, and more:</div>
                 <div className="flex items-center gap-3 mt-4 ">

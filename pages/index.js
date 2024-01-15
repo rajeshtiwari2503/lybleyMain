@@ -23,7 +23,7 @@ export default function Home() {
      className="   " 
     >
       <HomeSlider />
-      <div className='container mx-auto px-14 mt-20'>
+      <div className='container mx-auto px-4 md:px-14 mt-20'>
        <HomePage />
        
       </div>
