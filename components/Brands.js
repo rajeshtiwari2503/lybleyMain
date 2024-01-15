@@ -42,7 +42,7 @@ const Brands = () => {
         <>
             <div className={`  py-10    mt-14 `}>
                 <section data-aos="fade-up" className="container ">
-                    <h3 className={`text-center font-bold py-3 mb-6 text-3xl  text-black`}>Discover the key features</h3>
+                    <h3 className={`text-center font-bold py-3 mb-6 text-3xl  text-black`}>Discover Our Brands</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                         {serviceData.map((item, index) => (
                             <Card isServices={true} key={item.id} index={index} {...item} />

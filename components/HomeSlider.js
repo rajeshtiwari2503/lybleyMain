@@ -63,21 +63,21 @@ const HomeSlider = () => {
   return (
     <>
       <div data-aos="fade-up" data-aos-duration="300" className="w-full p-0">
-        <div className=" ">
+        <div className="">
          
           <div
             data-aos="zoom-in"
             data-aos-duration="300"
-            className=""
+            className="relative"
           >
             <Slider {...settings}>
               {homeSliderData.map(({ id, name, text, img }) => {
                 return (
-                  <div key={id} className="w-full " >
-                    <div style={{backgroundImage:`url(${img})`}} className="flex bg-cover sm:h-[980px] md:h-[680px]    bg-black bg-opacity-30 bg-center h-[400px] flex-col justify-center items-center gap-4 text-center shadow-lg    relative">
-                     <div className="flex justify-center items-center  ">
-                       
-                      </div>
+                  <div key={id} className="w-full" >
+                    <div style={{backgroundImage:`url(${img})`}} className="flex bg-cover sm:h-[980px] md:h-[680px]   bg-center h-[400px] gap-4 text-center shadow-lg relative">
+                     {/* <div className="flex justify-center items-center  ">
+                       sdfghj
+                      </div> */}
                       {/* <h1 className="text-xl font-bold">{name}</h1>
                       <p className="text-gray-500 text-sm">{text}</p> */}
                       <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
@@ -88,6 +88,10 @@ const HomeSlider = () => {
                 );
               })}
             </Slider>
+            <div className="absolute rounded-md bg-black bg-opacity-30 top-0 left-0">
+            <h2 className="text-2xl mx-16 p-6 mt-[300px] bg-black bg-opacity-30 w-[500px] text-white font-bold">Your One-Stop Solution Hub - Unleashing Excellence Across IT, Spare Parts, Home Appliances, Samosa Fry, and After-Sale Service</h2>
+
+            </div>
           </div>
         </div>
       </div>
