@@ -54,7 +54,7 @@ const Footer = () => {
     <>
       <div className="dark:bg-gray-950  relative overflow-hidden  ">
         <div className="bg-[#000] text-white  ">
-          <div className="container mx-auto px-14">
+          <div className="container mx-auto px-6 md:px-14">
             {/* <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl"> */}
             <div className="grid md:grid-cols-3  pt-4   rounded-t-xl">
               <div className="py-8 ">
@@ -83,18 +83,18 @@ const Footer = () => {
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
                 <div>
-                  <div className="pt-8 px-4">
+                  <div className="pt-8  ">
                     <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
                     Our Brands
                     </h1>
                     <ul className="flex flex-col gap-3">
                       {FooterLinks.map((link,index) => (
                         <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1    hover:text-blue-400" key={index}>
-                          <div
+                          <div className="flex items-center"
                             onClick={()=>handleLink(link?.link)}
                           >
-                            <span>&#11162;</span>
-                            <span>{link?.title}</span>
+                            <div>&#11162;</div>
+                            <div className="ms-3">{link?.title}</div>
                           </div>
                         </li>
                       ))}
@@ -115,7 +115,7 @@ const Footer = () => {
                 </div>
               </div>
                 <div className="col-span-2">
-                  <div className="pt-8 px-4">
+                  <div className="pt-8 md:mb-0 mb-12 px-4">
                     <div className="rounded-xl  ">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.783672779409!2d77.36534197457178!3d28.606265885274766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5e6156c623%3A0xfc1292095a4933f9!2sLYBLEY!5e0!3m2!1sen!2sin!4v1704344578953!5m2!1sen!2sin"

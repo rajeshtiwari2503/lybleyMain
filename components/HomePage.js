@@ -1,13 +1,13 @@
 import React from 'react'
 import Brands from './Brands'
 import News from './News'
- 
+
 
 const HomePage = () => {
   return (
-    <div> 
+    <div>
       <News />
-        <Brands />
+      <Brands />
     </div>
   )
 }
