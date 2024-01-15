@@ -98,7 +98,7 @@ const Header = ({ handleOrderPopup }) => {
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-4 py-1 font-bold text-2xl">
                 <Link href={"/"}  >
-                  <img src={"/Logo.png"} alt="" className={`${scrolling ? "border-2 border-white" : ""} h-16 max-w-full rounded-lg`} />
+                  <img src={"/Logo.png"} alt="" className={`${scrolling || router.pathname === "/about" || router.pathname === "/contact" || router.pathname === "/career" ? "border-2 border-white" : ""} h-16 max-w-full rounded-lg`} />
                 </Link>
                 {/* <span>TCJ hrefurism</span> */}
               </div>
