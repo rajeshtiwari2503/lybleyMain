@@ -15,7 +15,7 @@ const News = () => {
         <div className="md:col-span-4 col-span-full">
           <div className="grid md:grid-cols-2 grid-cols-1">
              
-            <div className="md:col-span-6 col-span-full   bg-cover bg-center md:h-[500px] h-[200px]" style={{ backgroundImage: "url(appliances.jpg)" }}>
+            <div className="md:col-span-6 col-span-full bg-cover bg-center md:h-[500px] h-[200px]" style={{ backgroundImage: "url(appliances.jpg)" }}>
             </div>
           </div>
         </div>
