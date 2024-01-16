@@ -55,7 +55,15 @@ const DropdownLinks = [
   },
   {
     name: "Rosifo  ",
-    link: "https://rosifo.in",
+    link: "https://www.rosifo.in",
+  },
+  {
+    name: "Servsy  ",
+    link: "https://www.servsy.in",
+  },
+  {
+    name: "Inventoryfy",
+    link: "https://www.inventoryfy.com",
   },
 ];
 
