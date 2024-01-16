@@ -36,7 +36,7 @@ const FooterLinks = [
         link: "https://www.sparetrade.in",
     },
     {
-        id: 4,
+        id: 8,
         
         title: "Heuser",
         link: "https://heuser.in",
@@ -45,6 +45,16 @@ const FooterLinks = [
       id: 5,
       title: "Rosifo  ",
       link: "https://rosifo.in",
+    },
+    {
+      id: 6,
+      title: "Servsy  ",
+      link: "https://servsy.in",
+    },
+    {
+      id: 7,
+      title: "Inventoryfy  ",
+      link: "https://inventoryfy.com",
     },
      
 ];
@@ -59,9 +69,9 @@ const Footer = () => {
     <>
       <div className="dark:bg-gray-950  relative overflow-hidden  ">
         <div className="bg-[#000] text-white  ">
-          <div className="container mx-auto px-6 md:px-14">
+          <div className="container mx-auto px-6  md:px-14">
             {/* <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl"> */}
-            <div className="grid md:grid-cols-3  pt-4   rounded-t-xl">
+            <div className="grid md:grid-cols-3  gap-4 pt-4   rounded-t-xl">
               <div className="py-8 ">
                 <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                   <Link href={"/"}> <img src={"/Logo.png"} alt="" className="max-h-[64px] rounded-lg border-2 border-white" /></Link>
@@ -81,14 +91,14 @@ const Footer = () => {
                 </div> 
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
-                  <p>+91 7011071202</p>
+                  <p>+91 9953889657</p>
                 </div>
                 {/* social handles */}
 
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+              <div className="grid grid-cols-2 sm:grid-cols-3  col-span-2 md:items-center md:pl-10">
                 <div>
-                  <div className="pt-8  ">
+                  <div className=" ">
                     <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
                     Our Brands
                     </h1>
@@ -107,7 +117,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="block md:hidden">
-                <div className="pt-8 px-4">
+                <div className="  px-4">
                     <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
                      Social Media
                     </h1>
@@ -120,7 +130,7 @@ const Footer = () => {
                 </div>
               </div>
                 <div className="col-span-2">
-                  <div className="pt-8 md:mb-0 mb-12 px-4">
+                  <div className=" md:mt-0 md:mb-3 mb-12 mt-12  px-4">
                     <div className="rounded-xl  ">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.783672779409!2d77.36534197457178!3d28.606265885274766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5e6156c623%3A0xfc1292095a4933f9!2sLYBLEY!5e0!3m2!1sen!2sin!4v1704344578953!5m2!1sen!2sin"
