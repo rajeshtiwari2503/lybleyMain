@@ -40,6 +40,12 @@ const serviceData = [
         link: "https://heuser.in",
         description:"Explore Heuser for top-quality home appliances, including BDLC fans, air coolers, water heaters, electric irons, mixer grinders, and EV motors. Committed to satisfaction, we deliver products that meet your expectations."
     },
+    {
+        id: 4,
+        image: "rodifo.png",
+        title: "Rosifo",
+        link: "https://rosifo.in/",
+    },
      
 ];
 const Brands = () => {

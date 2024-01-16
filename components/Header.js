@@ -53,6 +53,10 @@ const DropdownLinks = [
     name: "Samosa Fry",
     link: "https://www.samosafry.com",
   },
+  {
+    name: "Rosifo  ",
+    link: "https://rosifo.in",
+  },
 ];
 
 const Header = ({ handleOrderPopup }) => {

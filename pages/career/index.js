@@ -72,10 +72,10 @@ const career = (props) => {
             </div>
             {isCareer
                 ? ""
-                : <div className='container mx-auto px-4 md:px-14 mt-16'>
+                : <div className='container mx-auto px-4 md:px-14 mt-16 mb-8'>
                     <div className='text-center text-2xl font-bold mt-12'>Why Choose Lybley?</div>
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2   items-center justify-center'>
-                        <div className=''>
+                        <div className=' '>
                             <div className='mt-2 text-justify'> <span className='font-bold'> Innovative Projects:</span> Dive into exciting projects that challenge your skills and expand your horizons. From AI and machine learning to cybersecurity and cloud computing, be at the forefront of groundbreaking technologies.</div>
 
                             <div className='mt-2 text-justify'> <span className='font-bold'> Collaborative Culture:</span> Join a diverse team of talented individuals who are dedicated to teamwork and mutual growth. We believe in sharing knowledge, supporting each other, and celebrating successes together.</div>
