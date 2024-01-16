@@ -34,7 +34,7 @@ export const NavbarLinks = [
 
 const DropdownLinks = [
   {
-    name: "Lybley IT",
+    name: "Lybley IT Services",
     link: "https://it.lybley.com",
   },
   {
@@ -46,7 +46,7 @@ const DropdownLinks = [
     link: "https://heuser.in",
   },
   {
-    name: "Home Applicances",
+    name: "Lybley Home Warranty",
     link: "https://www.lybley.com",
   },
   {
