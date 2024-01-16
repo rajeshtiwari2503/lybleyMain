@@ -11,14 +11,14 @@ const serviceData = [
     {
         id: 2,
         image: "homeAppliances.jpg",
-        title: "Lybley Home Appliances",
+        title: "Lybley Home Warranty",
         link: "https://lybley.com",
 
 
     },
     {
         id: 3,
-        image: "samosafry.webp",
+        image: "samosafry.jpg",
         title: "Samosafry",
         link: "https://www.samosafry.com",
  
@@ -34,6 +34,12 @@ const serviceData = [
         image: "Heuser.png",
         title: "Heuser",
         link: "https://heuser.in",
+    },
+    {
+        id: 4,
+        image: "rodifo.png",
+        title: "Rosifo",
+        link: "https://rosifo.in/",
     },
      
 ];

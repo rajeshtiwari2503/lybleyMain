@@ -46,12 +46,16 @@ const DropdownLinks = [
     link: "https://heuser.in",
   },
   {
-    name: "Home Applicances",
+    name: "Home Warranty",
     link: "https://www.lybley.com",
   },
   {
     name: "Samosa Fry",
     link: "https://www.samosafry.com",
+  },
+  {
+    name: "Rosifo  ",
+    link: "https://rosifo.in",
   },
 ];
 
