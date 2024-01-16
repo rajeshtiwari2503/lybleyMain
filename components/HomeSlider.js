@@ -70,7 +70,8 @@ const HomeSlider = () => {
               {homeSliderData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="w-full" >
-                    <div style={{backgroundImage:`url(${img})`}} className="flex bg-cover sm:h-[980px] md:h-[680px]   bg-center h-[400px] gap-4 text-center shadow-lg relative">
+                    <div style={{backgroundImage:`url(${img})`}} className="flex bg-cover sm:h-[980px] md:h-[680px] bg-black bg-opacity-50  bg-center h-[400px] gap-4 text-center shadow-lg relative">
+     
                      {/* <div className="flex justify-center items-center  ">
                        sdfghj
                       </div> */}

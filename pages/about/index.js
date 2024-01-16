@@ -5,7 +5,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="container mx-auto px-14 pt-14">
+      <div className="container mx-auto md:px-14 px-4 pt-14">
         <div className="py-10">
           <h1 className=" my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
             About us
@@ -37,7 +37,7 @@ const About = () => {
         </div>
       </div>
       <Location />
-      <p className="container mx-auto px-14 p-3 mb-8"> At Lybley, we are driven by a passion for excellence and a commitment to customer satisfaction. Explore our diverse range of services, and let us be your partner in progress. Contact us today to experience the perfect fusion of technology, convenience, and culinary delight. Welcome to a world where solutions meet satisfaction!</p>
+      <p className="container mx-auto md:px-14 px-4  p-3 mb-8"> At Lybley, we are driven by a passion for excellence and a commitment to customer satisfaction. Explore our diverse range of services, and let us be your partner in progress. Contact us today to experience the perfect fusion of technology, convenience, and culinary delight. Welcome to a world where solutions meet satisfaction!</p>
     </>
   );
 };
