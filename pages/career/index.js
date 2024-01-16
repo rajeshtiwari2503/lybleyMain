@@ -56,8 +56,8 @@ const career = (props) => {
     // https://sparetrade-bucket.s3.ap-south-1.amazonaws.com/career.jpg-1704870006840-776787815
     return (
         <>
-            <div data-aos="fade-up" onClick={isCareer ? handleLink : handleScroll} className=" cursor-pointer bg-cover bg-center md:h-[500px] h-[250px]" style={{ backgroundImage: 'url("/career2.jpg")', marginTop: "70px" }}>
-                <div className='bg-black bg-opacity-40 flex items-center md:h-[500px] h-[250px]'>
+            <div data-aos="fade-up" onClick={isCareer ? handleLink : handleScroll} className=" cursor-pointer bg-cover bg-center  h-[500px]  " style={{ backgroundImage: 'url("/career2.jpg")', marginTop: "70px" }}>
+                <div className='bg-black bg-opacity-40 flex items-center  h-[500px]  '>
                     <div>
                         <h1 className='text-center text-white font-bold text-4xl  '>Careers</h1>
                         <p className='text-center text-white font-bold mt-4 text-2xl'> Join Our Team and Shape the Future of Technology!</p>
