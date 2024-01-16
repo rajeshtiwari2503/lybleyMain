@@ -5,7 +5,7 @@ const homeSliderData = [
  
   {
      
-    img: "tectnology.jpg",
+    img: "itWeb.jpg",
   },  
   {
      
