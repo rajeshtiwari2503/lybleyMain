@@ -56,17 +56,19 @@ const career = (props) => {
     // https://sparetrade-bucket.s3.ap-south-1.amazonaws.com/career.jpg-1704870006840-776787815
     return (
         <>
-            <div data-aos="fade-up"  onClick={isCareer ? handleLink :handleScroll} className=" cursor-pointer bg-cover bg-center h-[400px]" style={{ backgroundImage: 'url("/career2.jpg")', marginTop: "70px" }}>
-                <div className='bg-black bg-opacity-40  h-[400px]'>
-                    <h1 className='text-center text-white font-bold text-4xl pt-12'>Careers</h1>
-                    <p className='text-center text-white font-bold mt-4 text-2xl'> Join Our Team and Shape the Future of Technology!</p>
-                    <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 mt-2'>
-                        <div></div>
-                        <p className='text-center text-white col-span-2 '> Welcome to Lybley, where innovation meets opportunity. Are you ready to be part of a dynamic team that thrives on pushing boundaries and creating cutting-edge solutions in the world of technology? At Lybley, we're passionate about fostering an environment that encourages creativity, collaboration, and continuous learning.</p>
-                        <div></div>
-                    </div>
-                    <div className='text-center mt-8'>
-                        <button className='bg-gradient-to-r from-black to-white hover:bg-bg-gradient-to-r text-black-400 font-bold uppercase  hover:from-white hover:bg-black transition-all duration-600  px-4 py-3 rounded-full' onClick={isCareer ? handleLink : handleScroll}>Join our team</button>
+            <div data-aos="fade-up" onClick={isCareer ? handleLink : handleScroll} className=" cursor-pointer bg-cover bg-center md:h-[500px] h-[250px]" style={{ backgroundImage: 'url("/career2.jpg")', marginTop: "70px" }}>
+                <div className='bg-black bg-opacity-40 flex items-center md:h-[500px] h-[250px]'>
+                    <div>
+                        <h1 className='text-center text-white font-bold text-4xl  '>Careers</h1>
+                        <p className='text-center text-white font-bold mt-4 text-2xl'> Join Our Team and Shape the Future of Technology!</p>
+                        <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 mt-2'>
+                            <div></div>
+                            <p className='text-center text-white col-span-2 '> Welcome to Lybley, where innovation meets opportunity. Are you ready to be part of a dynamic team that thrives on pushing boundaries and creating cutting-edge solutions in the world of technology? At Lybley, we're passionate about fostering an environment that encourages creativity, collaboration, and continuous learning.</p>
+                            <div></div>
+                        </div>
+                        <div className='text-center mt-8'>
+                            <button className='bg-gradient-to-r from-black to-white hover:bg-bg-gradient-to-r text-black-400 font-bold uppercase  hover:from-white hover:bg-black transition-all duration-600  px-4 py-3 rounded-full' onClick={isCareer ? handleLink : handleScroll}>Join our team</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -59,13 +59,13 @@ const contact = () => {
           Contact us
         </div>
       </div>
-      <div className='container sm:py-0'>
+      <div className='container mx-auto md:px-14 px-4  sm:py-0'>
         <div className='py-10'>
 
-          <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 py-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 py-4'>
             <div>
               <div className="font-bold text-4xl  text-center mb-8">ONLINE INQUIRY</div>
-              <div className="max-w-md mx-auto bg-black  p-6 rounded-md shadow-md  ">
+              <div className="  bg-black  p-6 rounded-md shadow-md  ">
 
                 <form onSubmit={handleSubmit}>
                   <div className=" ">
