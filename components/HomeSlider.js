@@ -85,7 +85,7 @@ const HomeSlider = () => {
               })}
             </Slider>
             <div className="absolute rounded-md  top-0 left-0">
-            <h2 className="text-2xl md:mx-16 mx-0  md:p-6 p-3 mt-[300px] w-full md:w-[500px] text-white font-bold">Your One-Stop Solution Hub - Unleashing Excellence Across IT, Spare Parts, Home Appliances, Samosa Fry, and After-Sale Service</h2>
+            <h2 className="text-2xl md:mx-16 mx-0  md:p-6 p-3 mt-[300px] w-full md:w-[500px] text-white font-bold">Explore a Range of Services Across IT Solutions, Spare Parts, Home Appliances, Samosa Fry, and After-Sale Services. Unlock Seamless Solutions for Varied Needs within Our Group of Specialization.</h2>
 
             </div>
           </div>

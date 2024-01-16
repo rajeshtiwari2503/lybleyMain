@@ -68,7 +68,7 @@ const Footer = () => {
                   {/* TravelloGo */}
                 </h1>
                 <p className="text-sm mt-4 ">
-                  Discover Lybley for web and app development, e-commerce solutions, CRM services, and impactful digital and social media marketing. Elevate your brand's digital presence with our comprehensive suite of tailored solutions designed to drive growth and engagement.
+                Experience unparalleled convenience with our comprehensive suite of services. Whether you need IT solutions, home warranties, spare parts, after-sale services, or a savory samosa fry treat, we've meticulously crafted a platform to cater to your diverse needs. Embrace seamless solutions and satisfaction, in Lybley.
                 </p>
                 <br />
                 <div className="flex items-center gap-3 ">

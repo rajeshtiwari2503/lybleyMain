@@ -45,6 +45,7 @@ const serviceData = [
         image: "rodifo.png",
         title: "Rosifo",
         link: "https://rosifo.in/",
+        description:"Savor affordable and diverse street food from ROSIFO, our premier delivery service. Order online for quick delivery and enjoy a unique variety of snacks, meals, and drinks from the comfort of your home."
     },
      
 ];
