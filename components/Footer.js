@@ -17,7 +17,7 @@ const FooterLinks = [
     {
         id: 2,
        
-        title: "Lybley Home Appliances",
+        title: "Lybley Home Warranty",
         link: "https://lybley.com",
 
 
@@ -40,6 +40,11 @@ const FooterLinks = [
         
         title: "Heuser",
         link: "https://heuser.in",
+    },
+    {
+      id: 5,
+      title: "Rosifo  ",
+      link: "https://rosifo.in",
     },
      
 ];
