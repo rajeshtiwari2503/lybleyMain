@@ -4,7 +4,7 @@ import Card from './Card';
 const serviceData = [
     {
         id: 1,
-        image: "tectnology.jpg",
+        image: "itWeb.jpg",
         title: "Lybley IT Services",
         link: "https://it.lybley.com",
     },
