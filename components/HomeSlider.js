@@ -13,11 +13,7 @@ const homeSliderData = [
   },
   {
      
-    img: "tectnology.jpg",
-  },
-  {
-     
-    img: "homeAppliances.jpg",
+    img: "samosafry.jpg",
   },
 ];
 
@@ -88,8 +84,8 @@ const HomeSlider = () => {
                 );
               })}
             </Slider>
-            <div className="absolute rounded-md bg-black bg-opacity-30 top-0 left-0">
-            <h2 className="text-2xl md:mx-16 mx-0  md:p-6 p-3 mt-[300px] bg-black bg-opacity-30 w-full md:w-[500px] text-white font-bold">Your One-Stop Solution Hub - Unleashing Excellence Across IT, Spare Parts, Home Appliances, Samosa Fry, and After-Sale Service</h2>
+            <div className="absolute rounded-md  top-0 left-0">
+            <h2 className="text-2xl md:mx-16 mx-0  md:p-6 p-3 mt-[300px] w-full md:w-[500px] text-white font-bold">Your One-Stop Solution Hub - Unleashing Excellence Across IT, Spare Parts, Home Appliances, Samosa Fry, and After-Sale Service</h2>
 
             </div>
           </div>
