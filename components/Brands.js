@@ -13,7 +13,7 @@ const serviceData = [
         id: 2,
         image: "homeAppliances.jpg",
         title: "Lybley Home Warranty",
-        link: "https://lybley.com",
+        link: "https://homewarranty.lybley.com",
         description:"Experience worry-free living with our trusted home warranty, ensuring unparalleled protection and maintenance for your essential appliances, providing peace of mind for your household."
 
 

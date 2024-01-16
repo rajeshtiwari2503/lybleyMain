@@ -47,7 +47,7 @@ const DropdownLinks = [
   },
   {
     name: "Lybley Home Warranty",
-    link: "https://www.lybley.com",
+    link: "https://homewarranty.lybley.com",
   },
   {
     name: "Samosa Fry",

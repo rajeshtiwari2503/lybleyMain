@@ -18,7 +18,7 @@ const FooterLinks = [
         id: 2,
        
         title: "Lybley Home Warranty",
-        link: "https://lybley.com",
+        link: "https://homewarranty.lybley.com",
 
 
     },

@@ -12,7 +12,7 @@ export default function Home() {
     <>
     <Head>
         <title>LYBLEY</title>
-        <meta name="description" content="Explore LYBLEY for cutting-edge website and app development, robust e-commerce solutions, and impactful digital marketing. Our expertise extends to comprehensive CRM services and strategic social media marketing. Elevate your brand's digital presence with tailored solutions designed for growth and engagement. Partner with us to unlock the full potential of the digital landscape and drive your business forward" />
+        <meta name="description" content="Experience unparalleled convenience with our comprehensive suite of services. Whether you need IT solutions, home warranties, spare parts, after-sale services, or a savory samosa fry treat, we've meticulously crafted a platform to cater to your diverse needs. Embrace seamless solutions and satisfaction, in Lybley." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
