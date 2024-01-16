@@ -6,10 +6,14 @@ import Career from '@/pages/career'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className=' '>
+      
+    <div className='container mx-auto px-4 md:px-14'>
       <News />
       <Brands />
-      <Career />
+      
+    </div>
+    <Career  isCareer={true}/>
     </div>
   )
 }
