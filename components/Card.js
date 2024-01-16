@@ -13,11 +13,11 @@ const handleLink=(link )=>{
     <>
       <div onClick={()=>handleLink(link)}  >
         <div className={`p-4 mt-4 cursor-pointer shadow-lg transition-all duration-500 hover:shadow-xl bg-black  rounded-lg m-2`}>
-          <div className="overflow-hidden bg-white">
+          <div className="overflow-hidden flex items-center rounded-md h-[200px] bg-white">
             <img
               src={image}
               alt="No image"
-              className="mx-auto h-[200px] object-cover transition duration-700 hover:skew-x-2 hover:scale-110"
+              className="mx-auto h-[120px] object-cover rounded-md transition duration-700 hover:skew-x-2 hover:scale-110"
             />
           </div>
         {isServices  

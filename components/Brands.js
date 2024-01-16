@@ -4,7 +4,7 @@ import Card from './Card';
 const serviceData = [
     {
         id: 1,
-        image: "itWeb.jpg",
+        image: "Logo.png",
         title: "Lybley IT Services",
         link: "https://it.lybley.com",
         description:"Revolutionize Your Digital Presence: Unleashing Comprehensive IT Excellence for Web Development, Mobile Apps, UI/UX Design, Digital Marketing, Social Media Mastery, and E-commerce Solutions!"
@@ -20,7 +20,7 @@ const serviceData = [
     },
     {
         id: 3,
-        image: "samosaImage.jpeg",
+        image: "samosafry1.webp",
         title: "Samosa fry",
         link: "https://www.samosafry.com",
         description:"Savor our piping hot samosas, crafted with fresh, natural ingredients, and paired with a variety of chutneys. Our commitment to quality guarantees a delicious experience. Order now for an irresistible taste."
@@ -28,7 +28,7 @@ const serviceData = [
     },
     {
         id: 4,
-        image: "spareparts1.jpg",
+        image: "sparetrade.png",
         title: "Sparetrade",
         link: "https://www.sparetrade.in",
         description:"Experience seamless appliance repairs with our online platform offering spare parts for multiple brands. Easily order and enjoy doorstep delivery, backed by hassle-free return options."
@@ -41,11 +41,25 @@ const serviceData = [
         description:"Explore Heuser for top-quality home appliances, including BDLC fans, air coolers, water heaters, electric irons, mixer grinders, and EV motors. Committed to satisfaction, we deliver products that meet your expectations."
     },
     {
-        id: 4,
+        id: 6,
         image: "rodifo.png",
         title: "Rosifo",
-        link: "https://rosifo.in/",
+        link: "https://rosifo.in",
         description:"Savor affordable and diverse street food from ROSIFO, our premier delivery service. Order online for quick delivery and enjoy a unique variety of snacks, meals, and drinks from the comfort of your home."
+    },
+    {
+        id: 7,
+        image: "servsy.png",
+        title: "servsy",
+        link: "https://servsy.in",
+        description:"Enhance your experience with our unparalleled after-sales services, committed to delivering reliable support and ensuring your satisfaction beyond the sale."
+    },
+    {
+        id: 8,
+        image: "sparepart.webp",
+        title: "Inventoryfy",
+        link: "https://inventoryfy.com",
+        description:" Simplify billing and optimize inventory effortlessly with our streamlined management solution. Elevate your business efficiency with precision and ease."
     },
      
 ];
