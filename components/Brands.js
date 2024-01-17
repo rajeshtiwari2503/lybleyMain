@@ -50,7 +50,7 @@ const serviceData = [
     {
         id: 7,
         image: "servsy.png",
-        title: "servsy",
+        title: "Servsy",
         link: "https://servsy.in",
         description:"Enhance your experience with our unparalleled after-sales services, committed to delivering reliable support and ensuring your satisfaction beyond the sale."
     },
