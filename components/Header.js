@@ -61,14 +61,7 @@ const DropdownLinks = [
     name: "Servsy  ",
     link: "https://www.servsy.in",
   },
-  {
-    name: "Inventoryfy",
-    link: "https://www.inventoryfy.com",
-  },
-  {
-    name: "Servsy  ",
-    link: "https://servsy.in",
-  },
+  
   {
     name: "Inventoryfy  ",
     link: "https://inventoryfy.com",
