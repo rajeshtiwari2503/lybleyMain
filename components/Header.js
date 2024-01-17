@@ -65,6 +65,16 @@ const DropdownLinks = [
     name: "Inventoryfy",
     link: "https://www.inventoryfy.com",
   },
+  {
+    name: "Servsy  ",
+    link: "https://servsy.in",
+  },
+  {
+    name: "Inventoryfy  ",
+    link: "https://inventoryfy.com",
+  },
+ 
+   
 ];
 
 const Header = ({ handleOrderPopup }) => {
