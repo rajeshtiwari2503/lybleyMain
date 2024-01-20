@@ -4,51 +4,61 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaLocationArrow,
-  FaMobileAlt,
+
 } from "react-icons/fa";
 
 const contact = () => {
 
-    const [formData, setFormData] = useState({
-      name: '',
-      contact: '',
-      email: '',
-      message: ''
+  const [isLoading, setIsLoading] = useState(false);
+  const [msg, setMsg] = useState("");
+  const [formData, setFormData] = useState({
+    name: '',
+    contact: '',
+    email: '',
+    message: '',
+    website: 'Lybley.com'
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
     });
-  
-    const handleInputChange = (event) => {
-      const { name, value } = event.target;
-      setFormData({
-        ...formData,
-        [name]: value
+  };
+
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      setIsLoading(true);
+      const response = await fetch('https://lybleybackend-production.up.railway.app/createContact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       });
-    };
-  
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-  
-      try {
-        const response = await fetch('/api/sendMail', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-  
-        if (response.ok) {
-          console.log('Message sent successfully');
-          // Show success message or perform other actions upon successful submission
-        } else {
-          console.error('Failed to send message');
-          // Handle error scenarios
-        }
-      } catch (error) {
-        console.error('Error sending message:', error);
+      setIsLoading(false);
+      if (response.ok) {
+        console.log('Message sent successfully');
+        setMsg("Message sent successfully")
+        setTimeout(() => {
+          setMsg("");
+        }, 3000)
+        // Show success message or perform other actions upon successful submission
+      } else {
+        console.error('Failed to send message');
         // Handle error scenarios
       }
-    };
+    } catch (error) {
+      console.error('Error sending message:', error);
+      // Handle error scenarios
+      setIsLoading(false);
+    }
+  };
   return (
     <>
       {/* <div className='  bg-cover bg-center  h-[370px]' style={{ backgroundImage: "url(contactUs.jpg)", marginTop: "72px" }}>
@@ -67,28 +77,19 @@ const contact = () => {
               <div className="font-bold text-4xl  text-center mb-8">ONLINE INQUIRY</div>
               <div className="  bg-black  p-6 rounded-md shadow-md  ">
 
-                <form onSubmit={handleSubmit}>
-                  <div className=" ">
-                    <div className="mb-4">
-                      <label for="name" className="block text-white font-semibold mb-2">Name</label>
-                      <input type="text" id="name" name="name" placeholder="Enter your name" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange} />
-                    </div>
-                    <div className="mb-4">
-                      <label for="contact" className="block text-white font-semibold mb-2">Contact</label>
-                      <input type="text" id="contact" name="contact" placeholder="Enter your contact" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}/>
-                    </div>
-                  </div>
-                  <div className="mb-4">
-                    <label for="email" className="block text-white font-semibold mb-2">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}/>
-                  </div>
+                <div className='border border-gray-200 p-6 rounded-xl '>
+                  <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                    <input type='text' name="name" className='col-span-2 md:col-span-1 focus:outline-none w-full   rounded-lg bg-[#eaeaea] p-4' placeholder='Name' onChange={handleInputChange} />
 
-                  <div className="mb-6">
-                    <label for="message" className="block text-white font-semibold mb-2">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" rows="2" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}></textarea>
+                    <input type='number' name="contact" className='col-span-2 md:col-span-1 focus:outline-none w-full   rounded-lg bg-[#eaeaea] p-4' placeholder='Phone Number' onChange={handleInputChange} />
+
+                    <input type='email' name="email" className='col-span-2 focus:outline-none w-full   rounded-lg bg-[#eaeaea] p-4' placeholder='Email' onChange={handleInputChange} />
+
+                    <textarea className='col-span-2 focus:outline-none w-full   rounded-lg bg-[#eaeaea] p-4' name="message" placeholder='Your Suggestion' onChange={handleInputChange} />
+                    <button className='bg-blue-400 text-xl w-full text-white font-bold  rounded-lg   p-4' disabled={isLoading} onClick={handleSubmit}>{isLoading ? "Submitting" : "Submit"}</button>
+                    <div className='text-center text-green-500 font-bold text-2xl pt-4'>{msg} </div>
                   </div>
-                  <button type="submit" value="Submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Message</button>
-                </form>
+                </div>
               </div>
 
             </div>
